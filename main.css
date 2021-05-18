@@ -6,17 +6,94 @@
 
 #container {
     display: grid;
-    /* grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px; */
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    /*grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;*/ 
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "amar amer amir amor amur ama ame ami amo"
+    "ma me mi . . . . . ."
+    "mo . . . . . . . mu"
+    "na . ne . . . ni . nu";
+    column-gap: 30px;
+    row-gap: 25px;
 }
 
 img {
     width: 100%;
     height:100%;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+}
+
+#img1 {
+    /*grid-column-start: amar;
+    grid-column-end: amer;
+    grid-row-start: amar;
+    grid-row-end: ma;*/
+    grid-area: amar;
+}
+
+#img2 {
+    grid-area: amer;
+}
+
+#img3 {
+    grid-area: amir;
+}
+
+#img4 {
+    grid-area: amor;
+}
+
+#img5 {
+    grid-area: amur;
+}
+    
+#img6 {
+    grid-area: ama;
+}
+    
+#img7 {
+    grid-area: ame;
+}
+
+#img8 {
+    grid-area: ami;
+}
+
+#img9 {
+    grid-area: amo;
+}
+
+#img10 {
+    grid-area: ma;
+}
+
+#img11 {
+    grid-area: me;
+}
+
+#img12 {
+    grid-area: mi;
+}
+
+#img13 {
+    grid-area: mo;
+}
+
+#img14 {
+    grid-area: mu;
+}
+
+#img15 {
+    grid-area: na;
+}
+
+#img16 {
+    grid-area: ne;
+}
+#img17 {
+    grid-area: ni;
+}
+#img18 {
+    grid-area: nu;
 }
